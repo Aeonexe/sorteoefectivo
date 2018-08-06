@@ -1,0 +1,38 @@
+/*!
+Theme Name: WPKit Framework
+Author: Alumin / Developed by Alberto Hartzet
+Author URI: https://alumin.agency
+Description: WPKit es un "Starter theme" para desarrolladores, incorpora las funcionalidades básicas para iniciar un tema de wordpress. Además incopora funcinalidades extendidas como un panel de admnistración personalizado, custom fields, SEO & Social optimization, entre otros.
+Version: 4.1
+License: © Copyright Alumin.Agency All rights reserved
+@Developer: Alberto Hartzet
+*/
+
+@import '_vars.scss';
+
+@import '../wpkit/assets/prettyprint/prettyprint.scss';
+@import '_reset.scss';
+@import '_mixins.scss';
+@import '_ui.scss';
+@import '_menu.scss';
+@import '_header.scss';
+
+body {
+	font-family: 'Open sans', 'arial', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #000;
+	background-color: #eee;
+	transition: all .25s linear;
+	position: relative;
+	right: 0;
+}
+
+	#wrapper {
+		width: 100%;
+		margin: auto;
+	}
+
+	div#wrapper {
+    min-height: 200vh;
+}
