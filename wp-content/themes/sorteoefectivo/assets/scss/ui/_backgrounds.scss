@@ -1,0 +1,28 @@
+/**
+ * 
+ * Colores de fondo, backgrounds
+ * 
+ */
+.ui-bg-white, .ui-bg-light { background-color: $white; }
+.ui-bg-white-important, .ui-bg-light-important { background-color: $white !important; }
+
+.ui-bg-black, .ui-bg-dark { background-color: $black; }
+.ui-bg-black-important, .ui-bg-dark-important { background-color: $black !important; }
+
+.ui-bg-red { background-color: $red; color: $white; }
+.ui-bg-red-important { background-color: $red !important; color: $white !important; }
+
+.ui-bg-gold, .ui-bg-yellow { background-color: $yellow; }
+.ui-bg-gold-important, .ui-bg-yellow-important { background-color: $yellow !important; }
+
+.ui-bg-brown { background-color: $brown; }
+.ui-bg-brown-important, .ui-bg-cocoa-important { background-color: $brown !important; }
+
+.ui-bg-pink { background-color: $pink; }
+.ui-bg-pink-important { background-color: $pink !important; }
+
+.ui-bg-blue { background-color: $blue; }
+.ui-bg-blue-important { background-color: $blue !important; }
+
+.ui-bg-gray { background-color: $gray; }
+.ui-bg-gray-important { background-color: $gray !important; }

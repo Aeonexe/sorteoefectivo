@@ -5,6 +5,7 @@
 		<head <?php wk_opengraph_header(); ?>>
 
 			<?php wp_head(); ?>
+			<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
 
 		</head>
 
@@ -12,6 +13,5 @@
 
 			<div id="wrapper">
 
-				<?php do_action( 'wk_widgets_header_layout' ); ?>
+				<?php get_template_part( 'modules/_components/header/header' ); ?>
 
-				

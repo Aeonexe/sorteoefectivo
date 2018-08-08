@@ -13,6 +13,6 @@
 
 get_header(); ?>
 
-	<?php do_action( 'wk_widgets_layout' ); ?>
+	<?php get_template_part( 'modules/home/home' ); ?>
 
 <?php get_footer(); ?>

@@ -1,0 +1,13 @@
+
+#main-header {
+	box-sizing: border-box;
+	padding: {
+		top: $boxModel * 2;
+		bottom: $boxModel * 2;
+		left: $boxModel;
+		right: $boxModel;
+	}
+	.logo {
+		display: inline-block;
+	}
+}

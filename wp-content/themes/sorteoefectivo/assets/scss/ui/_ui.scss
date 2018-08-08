@@ -1,0 +1,29 @@
+/**
+ * 
+ * Box model
+ * 
+ */
+
+.ui-box-model { padding-left: $boxModel; padding-right: $boxModel; }
+@media #{$onlyMobile} { 
+	.ui-m-box-model { 
+		padding-left: $boxModel; 
+		padding-right: $boxModel; 
+	} 
+}
+
+@media #{$onlyDesktop} { 
+	.ui-d-box-model { 
+		padding-left: $boxModel; 
+		padding-right: $boxModel; 
+	} 
+}
+
+
+.ui-hr-vertical {
+    display: block;
+    width: 1px;
+    height: 80%;
+    background-color: white;
+    margin: auto;
+}

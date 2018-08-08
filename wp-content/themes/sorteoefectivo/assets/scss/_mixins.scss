@@ -1,0 +1,28 @@
+@mixin flexModel( $positionA: false, $positionB: false, $direction: false ) {
+    display: flex;
+    @if $positionA == center or not $positionA {
+        align-items: center;
+        justify-content: center;
+    } @else if $positionA == top  {
+        align-items: flex-start;
+    } @else if $positionA == bottom  {
+        align-items: flex-end;
+    } @else if $positionA == left  {
+        justify-content: flex-start;
+    } @else if $positionA == right  {
+        justify-content: flex-end;
+    }
+
+    @if $positionB == right {
+        justify-content: flex-end;
+    } @else if $positionB == left {
+        justify-content: flex-start;
+    } @else if $positionB == top {
+        align-items: flex-start;
+    } @else if $positionB == bottom {
+        align-items: flex-end;
+    }
+    @if $direction {
+        flex-direction: $direction;
+    }
+}

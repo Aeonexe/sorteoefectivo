@@ -123,9 +123,9 @@
 						));
 			// Nivel 2 del menú : Google tools
 				$admin_bar->add_menu( array(
-					'id'    => 'seo-tools',
+					'id'    => 'google-tools',
 					'parent'=> 'developer-menu',
-					'title' => 'SEO',
+					'title' => 'Google Tools',
 					'meta'  => array(
 							'target' => '_blank',
 							'class' => 'developer-sub'
@@ -133,8 +133,19 @@
 					));
 				// Nivel 3 del menú : Google Pagespeed insights
 					$admin_bar->add_menu( array(
+						'id'    => 'google-pagespeed-insights',
+						'parent'=> 'google-tools',
+						'title' => 'Google Pagespeed insights',
+						'href'  => 'https://developers.google.com/speed/pagespeed/insights/',
+						'meta'  => array(
+								'target' => '_blank',
+								'class' => 'developer-sub-sub'
+							),
+						));
+				// Nivel 3 del menú : Google Pagespeed insights
+					$admin_bar->add_menu( array(
 						'id'    => 'google-markup-wizard',
-						'parent'=> 'seo-tools',
+						'parent'=> 'google-tools',
 						'title' => 'Asistente de datos estructurados',
 						'href'  => 'https://www.google.com/webmasters/markup-helper/u/0/',
 						'meta'  => array(
@@ -145,7 +156,7 @@
 				// Nivel 3 del menú : Google Pagespeed insights
 					$admin_bar->add_menu( array(
 						'id'    => 'google-structured-data-tool',
-						'parent'=> 'seo-tools',
+						'parent'=> 'google-tools',
 						'title' => 'Structured data testing',
 						'href'  => 'https://developers.google.com/structured-data/testing-tool/',
 						'meta'  => array(
@@ -153,50 +164,7 @@
 								'class' => 'developer-sub-sub'
 							),
 						));
-				// Nivel 2 del menú : Google tools
-					$admin_bar->add_menu( array(
-						'id'    => 'optimization-tools',
-						'parent'=> 'developer-menu',
-						'title' => 'Optimización',
-						'meta'  => array(
-								'target' => '_blank',
-								'class' => 'developer-sub'
-							),
-						));
-					// Nivel 3 del menú : Google Pagespeed insights
-						$admin_bar->add_menu( array(
-							'id'    => 'google-pagespeed-insights',
-							'parent'=> 'optimization-tools',
-							'title' => 'Google Pagespeed insights',
-							'href'  => 'https://developers.google.com/speed/pagespeed/insights/',
-							'meta'  => array(
-									'target' => '_blank',
-									'class' => 'developer-sub-sub'
-								),
-							));
 
-					// Nivel 3 del menú : Google Pagespeed insights
-						$admin_bar->add_menu( array(
-							'id'    => 'gmetrix',
-							'parent'=> 'optimization-tools',
-							'title' => 'Gmetrix website speed',
-							'href'  => 'https://gtmetrix.com/',
-							'meta'  => array(
-									'target' => '_blank',
-									'class' => 'developer-sub-sub'
-								),
-							));
-					// Nivel 3 del menú : Google Pagespeed insights
-						$admin_bar->add_menu( array(
-							'id'    => 'testmysite',
-							'parent'=> 'optimization-tools',
-							'title' => 'Think with google speed test',
-							'href'  => 'https://testmysite.thinkwithgoogle.com/',
-							'meta'  => array(
-									'target' => '_blank',
-									'class' => 'developer-sub-sub'
-								),
-							));
 	    }
 	}
 	if ( is_super_admin()) {

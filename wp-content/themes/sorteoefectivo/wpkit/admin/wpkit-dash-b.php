@@ -1423,7 +1423,7 @@ Options page
 
 	function wk_theme_alpha_login_style() {
 
-		wp_enqueue_style('dash-b-login-style', get_template_directory_uri() . '/css/login.css' );
+		wp_enqueue_style('dash-b-login-style', get_template_directory_uri() . '/assets/css/login.css' );
 
 		?>
 

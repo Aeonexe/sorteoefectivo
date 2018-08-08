@@ -301,7 +301,7 @@
 				if( get_option( 'option_facebook_title' ) ) :
 					$facebook_title = get_option( 'option_facebook_title' );
 				else :
-					$facebook_title = get_bloginfo( 'name' );
+					$facebook_title = bloginfo( 'name' );
 				endif;
 			elseif( is_single() || is_page() ) :
 				if( get_post_meta( $post->ID, 'seo_titulo-facebook', true) ) :

@@ -1,0 +1,39 @@
+// Colores
+$mainColor: #3b66aa;
+$secondaryColor: #fddb47;
+
+$red: red;
+$yellow: gold;
+$white: #fff;
+$black: #000;
+$brown: brown;
+$pink: #e2007c;
+$blue: blue;
+$gray: gray;
+$lightGray: #f1f1f1;
+
+
+// Fuentes
+$mainFont: 'Quicksand', sans-serif;
+$headersFont: 'Quicksand', sans-serif;
+
+
+// Media queries
+$onlyMobile: ( max-width: 770px );
+$onlyDesktop: ( min-width: 771px );
+$onlyDesktopLarge: ( min-width: 1441px );
+$onlyFromDesktopLarge: ( max-width: 1440px );
+$onlyDesktopMedium: ( min-width: 1280px );
+$onlyFromDesktopMedium: ( max-width: 1281px );
+$onlyTablet: ( min-width: 415px ) and ( max-width: 770px );
+$onlyfromTablet: ( min-width: 415px );
+$onlyPhone: ( max-width: 414px );
+$onlyiPhone5: ( max-width: 320px );
+
+
+// Caja 
+$boxModel: 20px;
+
+// Animaciones
+$cubicBezier1: .5s cubic-bezier(1, -0.05, 0.2, 1);
+$linear1: .25s linear;

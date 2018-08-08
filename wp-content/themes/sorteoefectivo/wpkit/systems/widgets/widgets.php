@@ -146,7 +146,7 @@ Layout de widgets */
 
 			if( get_option( 'wk_option_layouts_widget' ) ) {
 
-				get_template_part( 'templates/widgets_header' );
+				get_template_part( 'wpkit/systems/widgets/templates/widgets_header' );
 
 			} else {
 
@@ -161,13 +161,13 @@ Layout de widgets */
 
 		function wk_widgets() {
 
-			get_template_part( 'templates/widgets' );
+			get_template_part( 'wpkit/systems/widgets/templates/widgets' );
 
 		}
 
 		function wk_widgets_footer() {
 
-			get_template_part( 'templates/widgets_footer' );
+			get_template_part( 'wpkit/systems/widgets/templates/widgets_footer' );
 
 		}
 

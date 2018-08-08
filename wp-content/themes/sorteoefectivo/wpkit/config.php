@@ -26,7 +26,7 @@ Scripts & Styles en Admin y en Sitio */
 		wp_register_style( 'wk-style', $GLOBALS['wpkit_url'] . 'css/style.css' ); wp_enqueue_style( 'wk-style' );
 		wp_register_style( 'wpkitui', $GLOBALS['wpkit_url'] . 'assets/wpkitui/wpkitui.css' ); wp_enqueue_style( 'wpkitui' );
 		wp_register_style( 'codemirror', $GLOBALS['wpkit_url'] . 'assets/codemirror/codemirror.css' ); wp_enqueue_style( 'codemirror' );
-		wp_register_style( 'wk-admin', get_template_directory_uri() . '/css/admin.css' ); wp_enqueue_style( 'wk-admin' );
+		wp_register_style( 'wk-admin', get_template_directory_uri() . '/assets/css/admin.css' ); wp_enqueue_style( 'wk-admin' );
 
 		wp_enqueue_media();
 		wp_register_script( 'wk-scripts', $GLOBALS['wpkit_url'] . '/js/admin.js', array('jquery') ); wp_enqueue_script( 'wk-scripts' );
@@ -44,20 +44,13 @@ Scripts & Styles en Admin y en Sitio */
 			wp_deregister_style( 'dashicons' );
 		}
 		//wp_register_style( 'fontawesome-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css', '', '4.6.2'  ); wp_enqueue_style( 'fontawesome-cdn' );
-		wp_register_style( 'fontawesome', get_template_directory_uri() . '/fonts/font-awesome/font-awesome.css', '', '4.4.0'  ); wp_enqueue_style( 'fontawesome' );
+		//wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/fonts/font-awesome/font-awesome.css', '', '4.4.0'  ); wp_enqueue_style( 'fontawesome' );
 		wp_register_style( 'opensans-cdn', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700'  ); wp_enqueue_style( 'opensans-cdn' );
-		//wp_register_style( 'material-icons', get_template_directory_uri() . '/fonts/material-icons/material-icons.css' ); wp_enqueue_style('material-icons');
 		wp_register_style( 'wpkitui', $GLOBALS['wpkit_url'] . 'assets/wpkitui/wpkitui.css', '', '2.0' ); wp_enqueue_style( 'wpkitui' );
-		if( get_option( 'wk_option_libraries_fancybox' ) ) {
-			wp_register_style( 'fancybox', get_template_directory_uri() . '/libraries/fancybox/jquery.fancybox.min.css', '', '3' ); wp_enqueue_style( 'fancybox' );
-		}
-		if( get_option( 'wk_option_libraries_slick' ) ) {
-			wp_register_style( 'slick', get_template_directory_uri() . '/libraries/slick/slick.css', '', '1.8.0' ); wp_enqueue_style( 'slick' );
-		}
 		wp_register_style( 'styles', get_bloginfo('stylesheet_url') ); wp_enqueue_style( 'styles' );
 		
 		wp_deregister_script('jquery');
-		wp_register_script( 'jquery', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', '', null, true ); 
+		wp_register_script( 'jquery', get_template_directory_uri() . '/vendor/jquery/jquery-2.1.3.min.js', '', null, true ); 
 		wp_register_script( 'wpkitui', $GLOBALS['wpkit_url'] . 'assets/wpkitui/wpkitui.js', array('jquery'), '2.0', true ); wp_enqueue_script( 'wpkitui' );
 		if( get_option('wk_option_smoothscroll') ) {
 			wp_register_script( 'scrollto', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js', array('jquery'), null, true ); wp_enqueue_script( 'scrollto' );
@@ -65,14 +58,7 @@ Scripts & Styles en Admin y en Sitio */
 		if( get_option( 'wk_option_smoothscroll' ) || get_option( 'wk_option_library_tweenmax' ) ) {
 			wp_register_script( 'tweenMax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js', array('jquery'), null, true ); wp_enqueue_script( 'tweenMax' );
 		}
-		if( get_option( 'wk_option_libraries_fancybox' ) ) {
-			wp_register_script( 'fancybox', get_template_directory_uri() . '/libraries/fancybox/jquery.fancybox.min.js', array('jquery'), '3', true ); wp_enqueue_script( 'fancybox' );
-		}
-		if( get_option( 'wk_option_libraries_slick' ) ) {
-			wp_register_script( 'slick', get_template_directory_uri() . '/libraries/slick/slick.min.js', array('jquery'), '1.8.0', true ); wp_enqueue_script( 'slick' );
-		}
-		wp_register_script( 'wpkit-scripts', $GLOBALS['wpkit_url'] . 'js/site.js', array('jquery'), null, true ); wp_enqueue_script( 'wpkit-scripts' );
-		wp_register_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0', true ); wp_enqueue_script( 'scripts' );
+		wp_register_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array('jquery'), '1.0', true ); wp_enqueue_script( 'scripts' );
 		if( is_page( 'style-guide' ) ) {
 			wp_register_script( 'prettyprint', $GLOBALS['wpkit_url'] . 'assets/prettyprint/prettyprint.js', array('jquery'), '', true  ); 
 			wp_enqueue_script('prettyprint');
@@ -148,11 +134,6 @@ Scripts & Styles en Admin y en Sitio */
 		* ACF Code field */
 
 			include_once( get_template_directory() . '/wpkit/acf/acf-code-field/acf-code-field.php' );
-
-		/***************************************************************************
-		* Campos por default de Advanced Custom Fields */
-
-			include_once( get_template_directory() . '/functions/acf-custom.php');
 
 
 /*******************************************************************************

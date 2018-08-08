@@ -51,11 +51,11 @@ WPKit */
 		if ( ! function_exists('wk_custom_post_type') ) {
 
 			// Register Custom Post Type
-			function wk_custom_post_type() {
+			function wk_custom_post_type_historias() {
 
-				$ctp_name = 'articulos';
-				$name = 'Articulos';
-				$names = 'Artículos';
+				$ctp_name = 'historias';
+				$name = 'Historias';
+				$names = 'Historias';
 
 				$labels = array(
 					'name'                  => _x( $names, 'Post Type General Name', 'wpkit_text_domain' ),
@@ -142,7 +142,7 @@ WPKit */
 				register_post_type( $ctp_name, $args );
 
 			}
-			add_action( 'init', 'wk_custom_post_type', 0 );
+			add_action( 'init', 'wk_custom_post_type_historias', 0 );
 		}
 
 		// Añade capabilities al rol de usuario
@@ -168,4 +168,38 @@ WPKit */
 Tus funciones */
 
 
+function img( $imagen, $altText = null ) {
+	echo '<img src="' . get_template_directory_uri() . '/assets/img/' . $imagen . '" ' . $alt = $altText ? 'alt="' . $altText . '"' : '' . '>';  
+}
 
+function img_url( $imagen ) {
+	echo get_template_directory_uri() . '/assets/img/' . $imagen;
+}
+
+/**
+ * Cambia labels en el menú de administrador
+ */
+	function change_post_menu_label() {
+	    global $menu;
+	    global $submenu;
+	    $menu[5][0] = 'Historias';
+	    $submenu['user-edit.php'][5][0] = 'Historias';
+	    $submenu['user-edit.php'][10][0] = 'Publicar';
+	    echo '';
+	}
+	
+	add_action( 'admin_menu', 'change_post_menu_label' );
+
+
+
+	add_action( 'init', 'my_custom_init' );
+function my_custom_init() {
+	remove_post_type_support( 'post', 'editor' );
+	remove_post_type_support( 'post', 'trackbacks' );
+	remove_post_type_support( 'post', 'custom-fields' );
+	remove_post_type_support( 'post', 'comments' );
+	remove_post_type_support( 'post', 'slug' );
+	remove_post_type_support( 'post', 'author' );
+	remove_post_type_support( 'post', 'page-attributes' );
+	remove_post_type_support( 'post', 'post-formats' );
+}

@@ -1,0 +1,46 @@
+
+// Title
+[class*="ui-title"] { 
+	font-family: $headersFont; 
+	line-height: 1;
+}
+
+.ui-title-mega-big {
+	@media #{$onlyMobile} {
+		font-size: 62px;
+	}
+	@media #{$onlyDesktop} {
+		font-size: 32px; 
+	}
+}
+
+// 
+
+.ui-title-extra-big {
+	font-size: 52px;
+}
+
+.ui-title-big {
+	font-size: 32px;
+	@media #{$onlyMobile} { font-size: 28px; }
+}
+
+.ui-title { 
+	font-size: 28px; 
+}
+
+.ui-title-small { 
+	font-size: 22px; 
+}
+
+.ui-help-text {
+	font-size: 12px;
+}
+
+.ui-paragraph-big {
+	font-size: 18px;
+}
+
+.ui-label-text {
+	font-size: 13px;
+}

@@ -1,0 +1,68 @@
+@mixin btn($color, $ghost: false) {
+    padding: {
+		top: $boxModel / 2;
+		bottom: $boxModel / 2;
+		left: $boxModel * 2;
+		right: $boxModel * 2;
+	}
+	min-height: 40px;
+	@if $ghost {
+		background-color: transparent;
+		color: $color;
+		border: {
+			color: $color;
+			style: solid;
+			width: 2px;
+		}
+		&:hover {
+			//color: rgba(red($color), green($color), blue($color) - 50, 1);
+			opacity: .65;
+		}
+		
+	} @else {
+		background-color: $color;
+		color: $white;
+		@if $color == white {
+			color: $black;	
+		}
+		&:hover {
+			opacity: .65;
+		}
+	}
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 40px;
+    transition: $linear1;
+	cursor: pointer;
+}
+// Btn
+.ui-btn,
+.ui-button {
+	@include btn($mainColor);
+}
+
+.ui-btn-ghost,
+.ui-button-ghost {
+	@include btn($mainColor, true);
+}
+
+// Trae los colores declarados en _vars.scss
+$colors: (
+		"main": $mainColor,
+		"secondary": $secondaryColor,
+		"red" : $red,
+		"yellow": $yellow,
+		"white": $white,
+		"black": $black,
+		"brown": $brown,
+		"pink": $pink,
+		"blue": $blue,
+		"gray": $gray
+	 );
+
+// Crea un selector y valores para cada color en el map $colors
+@each $color, $i in $colors {
+	.ui-button-#{$color}, .ui-btn-#{$color} { @include btn($i); }
+	.ui-btn-ghost-#{$color}, .ui-button-ghost-#{$color} { @include btn($i, true); }
+}
+

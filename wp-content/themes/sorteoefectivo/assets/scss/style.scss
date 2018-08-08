@@ -1,0 +1,59 @@
+/*!
+Theme Name: WPKit Framework
+Author: Alumin / Developed by Alberto Hartzet 
+Author URI: https://alumin.agency
+Description: WPKit framework incorpora las funcionalidades básicas para iniciar un tema de wordpress. Además incopora funcinalidades extendidas como un panel de admnistración personalizado, custom fields, SEO & Social optimization, entre otros.
+Version: 4.1.2
+License: © Copyright Alumin.Agency All rights reserved
+@Developer: Alberto Hartzet
+*/
+
+/**
+ * 
+ * Manifest
+ * 
+ */
+@import '_vars.scss';
+
+//Vendor
+@import '../../vendor/slick/slick.scss';
+@import '../../vendor/fancybox/fancybox.scss';
+@import '../../vendor/wpkitui/wpkitui.scss';
+
+// Fonts 
+@import '../../assets/fonts/font-awesome/font-awesome.scss';
+//@import '../../assets/fonts/material-icons/material-icons.scss';
+
+@import '../../wpkit/assets/prettyprint/prettyprint.scss';
+@import '_reset.scss';
+@import '_mixins.scss';
+@import 'ui/_ui.scss';
+@import 'ui/_titles.scss';
+@import 'ui/_texts.scss';
+@import 'ui/_buttons.scss';
+@import 'ui/_backgrounds.scss';
+@import '../../modules/_components/header/header.scss';
+@import '../../modules/_components/footer/footer.scss';
+@import '../../modules/_components/slider/slider.scss';
+
+
+// Modules
+@import '../../modules/home/home.scss';
+
+/**
+ * Estilos
+ */
+
+body {
+	font-family: 'Quicksand', 'arial', sans-serif;
+	font-size: 13px;
+	color: #000;
+}
+
+#wrapper {
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+}
+
+
