@@ -9,7 +9,7 @@
 
 		</head>
 
-		<body <?php body_class('wk-wrap-1200'); ?>>
+		<body <?php body_class('wk-wrap-1100'); ?>>
 
 			<div id="wrapper">
 

@@ -73,11 +73,60 @@
         #section-video .video-thumbnail { background-image: url(<?php $thumbnail = get_field( 'video_thumbnail' ); echo $thumbnail['sizes']['large'] ?>); }
     </style>
     <a class="video-thumbnail" data-fancybox href="<?php the_field( 'video' ); ?>">
+        <img src="<?php img_url('chevron-up.png'); ?>" alt="Up" class="chevron-left">
         <div class="gradient"></div>
         <div class="copy">
             <div class="ui-title">Descubre la historia de <strong><?php the_title(); ?></strong> <span class="icon-play"><span class="fa fa-play"></span></span></div>
         </div>
     </a>
 
+</section>
+
+<section id="section-content" class="wk-section">
+    <div class="wk-section-wrap">
+        
+        <div class="wk-cols">
+            
+            <div class="content-column-left wk-col">
+                <?php $nombre = get_the_title(); $nombreApellido = explode( ' ', $nombre ); ?>
+                <h1 class="ui-title-big"><strong><?= $nombreApellido[0]; ?></strong><span><?= $nombreApellido[1]; ?></span> </h1>
+                <h6 class="ui-label-text"><?php the_field( 'ocupacion' ); ?></h6>
+            </div>
+
+            <div class="content-column"><span class="hr-vertical"></span></div>
+        
+            <div class="content-column-right wk-col">
+                <?php the_field( 'parrafo' ); ?>
+            </div>
+        
+        </div>
+
+        <div class="block">
+            <?php if( have_rows( 'bloque' ) ) : while( have_rows( 'bloque' ) ) : the_row( 'bloque' ); ?>
+
+                <?php if( get_row_layout() == 'columnas')  : ?>
+
+                    <div class="columns">
+                        <div class="wk-cols">
+                            <div class="content-column wk-col">
+                                <?php the_sub_field( 'columna_derecha' ); ?>
+                            </div>
+                            <div class="content-column wk-col">
+                                <?php the_sub_field( 'columna_izquierda' ); ?>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php elseif( get_row_layout() == 'columna' ) : ?>
+                    <div class="column">
+                        <div class="content-column"><?php the_sub_field( 'columna' ); ?></div>
+                    </div>
+                <?php endif; ?>
+
+            
+            <?php endwhile; endif; ?>
+        </div>
+
+    </div>
 </section>
 
