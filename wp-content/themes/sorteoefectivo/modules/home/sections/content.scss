@@ -1,20 +1,35 @@
 #section-content {
     background-color: $blue;
     color: $white;
-    padding: {
-        top: $boxModel * 6;
-        bottom: $boxModel * 6;
-        left: $boxModel;
-        right: $boxModel;
+    @media #{$onlyDesktop} {
+        padding: {
+            top: $boxModel * 6;
+            bottom: $boxModel * 6;
+        }
+    }
+    @media #{$onlyMobile} {
+        padding: {
+            top: $boxModel * 4;
+            bottom: $boxModel * 4;
+        }
     }
     [class*="content-column"] {
         display: flex;
         flex-direction: column;
         justify-content: center;
         box-sizing: border-box;
-        padding: {
-            left: $boxModel * 2;
-            right: $boxModel * 2;
+        @media #{$onlyDesktop} {
+            padding: {
+                left: $boxModel * 2;
+                right: $boxModel * 2;
+            }
+        }
+        @media #{$onlyMobile} {
+            text-align: right;
+            padding: {
+                left: $boxModel;
+                right: $boxModel;
+            }
         }
         [class*="ui-title"],
         .ui-label-text {
@@ -32,12 +47,16 @@
         .content-column {
             max-width: 320px;
             margin: auto;
-            padding: {
-                top: $boxModel * 2;
-                bottom: $boxModel * 2;
+            @media #{$onlyDesktop} {
+                padding: {
+                    top: $boxModel * 2;
+                    bottom: $boxModel * 2;
+                }
             }
             &:nth-child(even) {
-                margin-top: 100px;
+                @media #{$onlyDesktop} {
+                    margin-top: 100px;
+                }
             }
             &:nth-child(odd) {
                 margin-top: 0;
@@ -47,12 +66,18 @@
     }
     .column {
         @extend .ui-title-small;
-        text-align: center;
         margin: auto;
         max-width: 600px;
-        padding: {
-            top: $boxModel * 4;
-            bottom: $boxModel * 4;
+        line-height: 1.5;
+        @media #{$onlyDesktop} {
+            text-align: center;
+            padding: {
+                top: $boxModel * 4;
+                bottom: $boxModel * 4;
+            }
+        }
+        @media #{$onlyMobile} {
+            text-align: right;
         }
     }
 }

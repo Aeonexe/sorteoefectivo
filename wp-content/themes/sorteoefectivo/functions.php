@@ -15,19 +15,19 @@ WPKit */
 
 
 /***************************************************************************
-* Página de opciones ACF *
+* Página de opciones ACF */
 
 	if( function_exists('acf_add_options_page') ) {
 
-		// acf_add_options_page(array(
-		// 	'page_title' 	=> 'Opciones',
-		// 	'menu_title'	=> 'ACF Options',
-		// 	'menu_slug' 	=> 'opciones-de-panel',
-		// 	'capability'	=> 'edit_posts',
-		// 	'redirect'		=> false,
-		// 	'icon_url'		=> 'dashicons-marker',
-		//  'position'		=> '4',
-		// ));
+		acf_add_options_page(array(
+			'page_title' 	=> 'Sorteo efectivo',
+			'menu_title'	=> 'Sorteo efectivo',
+			'menu_slug' 	=> 'sorteo-efectivo',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false,
+			'icon_url'		=> 'dashicons-marker',
+		 'position'		=> '4',
+		));
 
 		// acf_add_options_sub_page(array(
 		// 	'page_title' 	=> 'Herramientas',
@@ -35,11 +35,11 @@ WPKit */
 		// 	'parent_slug'	=> 'opciones-de-panel',
 		// ));
 
-		acf_add_options_sub_page(array(
-			'page_title' 	=> 'Opciones',
-			'menu_title'	=> 'Opciones',
-			'parent_slug'	=> 'options-wpkit',
-		));
+		// acf_add_options_sub_page(array(
+		// 	'page_title' 	=> 'Opciones',
+		// 	'menu_title'	=> 'Opciones',
+		// 	'parent_slug'	=> 'options-wpkit',
+		// ));
 
 	}
 

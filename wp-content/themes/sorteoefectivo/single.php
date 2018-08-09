@@ -15,7 +15,7 @@ get_header(); ?>
 
 <p>
 
-	<?php get_template_part('wpkit/systems/layouts/post'); ?>
+	<?php get_template_part('modules/home/home'); ?>
 
 </p>
 

@@ -1,0 +1,36 @@
+#section-related-histories {
+    background-color: $blue;
+    color: $white;
+    @extend #section-history-excerpt;
+    .histories {
+        .history {
+            @media #{$onlyDesktop} {
+                width: calc( 100% / 2 + 60px );
+            }
+            &:first-child {
+                @media #{$onlyDesktop} {
+                    margin-left: $skewModel;
+                    clip-path: polygon(calc(0% - -80px) 0%, 100% 0%, calc(100% - 80px) 100%, 0% 100%);
+                }
+                clip-path: polygon(calc(0% + 80px) 0%, 100% 0%, calc(100% - 80px) 100%, 0% 100%);
+                padding-left: $boxModel * 2;
+            }
+            &:last-child {
+                @media #{$onlyDesktop} {
+                    clip-path: polygon(calc(0% + 80px) 0%, 100% 0%, 100% 100%, 0% 100%);
+                }
+                clip-path: polygon(0% 0%, calc(100% - 80px) 0%, 100% 100%, calc(0% + 80px) 100%);
+                padding-left: $boxModel * 2;
+            }
+        }
+    }
+    .content-column {
+        box-sizing: border-box;
+        padding: $boxModel;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+}

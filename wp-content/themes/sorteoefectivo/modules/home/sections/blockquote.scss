@@ -1,0 +1,20 @@
+
+blockquote {
+    @extend .ui-title-extra-big;
+    line-height: 1;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    &:after,
+    &:before {
+        content: url(assets/img/quote.png);
+    }
+}
+
+#section-blockquote {
+    padding: {
+        top: $boxModel * 8;
+        bottom: $boxModel * 8;
+    }
+}

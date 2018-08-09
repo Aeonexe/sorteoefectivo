@@ -57,14 +57,20 @@
         top: - 30px;
         z-index: 1;
         transition: $cubicBezier1;
-        left: calc((100% / 14) * 7 + -50px );
+        @media #{$onlyDesktop} {
+            left: calc((100% / 14) * 7 + -50px );
+        }
     }
     .chevron-left {
         @extend .chevron;
-        left: calc((100% / 14) * 10 + 50px );
+        @media #{$onlyDesktop} {
+            left: calc((100% / 14) * 10 + 50px );
+        }
     }
     .chevron-right {
         @extend .chevron;
-        left: calc((100% / 14) * 1 + 50px );
+        @media #{$onlyDesktop} {
+            left: calc((100% / 14) * 1 + 50px );
+        }
     }
 }

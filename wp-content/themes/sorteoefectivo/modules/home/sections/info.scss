@@ -1,0 +1,25 @@
+#section-info {
+    [class*="content-column"] {
+        box-sizing: border-box;
+        padding: $boxModel;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        [class*="ui-title"] {
+            text-transform: uppercase;
+        }
+    }
+    .steps {
+        .content-column {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: $boxModel * 2;
+        }
+        .number {
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+#main-footer {
+    position: relative;
+    box-sizing: border-box;
+    padding: {
+        top: $boxModel * 2;
+        bottom: $boxModel * 2;
+        left: $boxModel;
+        right: $boxModel;
+    }
+    background-color: $lightGray;
+    text-align: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        margin: {
+            top: $boxModel * 4;
+            bottom: $boxModel * 4;
+            left: auto;
+            right: auto;
+        }
+    }
+    .to-top {
+        display: inline-block;
+        position: absolute;
+        bottom: -6px;
+        right: $boxModel * 2;
+        transition: $linear1;
+        &:hover {
+            opacity: .55;
+        }
+    }
+}
