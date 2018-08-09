@@ -22,17 +22,17 @@
 
 // Local
 
-define('DB_NAME', 'bancoppel_sorteo');
-define('DB_USER', 'remote');
-define('DB_PASSWORD', 'remote');
-define('DB_HOST', 'localhost');
+// define('DB_NAME', 'bancoppel_sorteo');
+// define('DB_USER', 'remote');
+// define('DB_PASSWORD', 'remote');
+// define('DB_HOST', 'localhost');
 
 
 /** The name of the database for WordPress */
-// define('DB_NAME', 'codecase_bsorteoremote');
-// define('DB_USER', 'codecase_bancopp');
-// define('DB_PASSWORD', 'CaPri1@*.$');
-// define('DB_HOST', '166.62.103.223:3306');
+define('DB_NAME', 'codecase_bsorteoremote');
+define('DB_USER', 'codecase_bancopp');
+define('DB_PASSWORD', 'CaPri1@*.$');
+define('DB_HOST', '166.62.103.223:3306');
 
 
 /** Database Charset to use in creating database tables. */
