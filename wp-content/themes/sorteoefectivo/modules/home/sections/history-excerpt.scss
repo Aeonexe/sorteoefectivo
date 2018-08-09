@@ -1,0 +1,130 @@
+$skewModel: 80px;
+$historyHight: 700px;
+
+#section-history-excerpt {
+    position: relative;
+    .histories {
+        @media #{$onlyDesktop} {
+            display: flex;
+            justify-content: space-between;
+        }
+        .history {
+             //flex: 1;
+             background: {
+                 color: $gray;
+                 size: cover;
+                 position: center;
+             }
+             color: $white;
+             min-height: $historyHight;
+             @media #{$onlyMobile} {
+                min-height: $historyHight / 2;
+             }
+             @media #{$onlyDesktop} {
+                 width: calc(100% / 3 + 60px);
+             }
+             box-sizing: border-box;
+             padding: {
+                 // left: $boxModel * 2;
+                 // right: $boxModel;
+                 // top: $boxModel;
+             }
+             @include flexModel( bottom );
+             margin: {
+                 left: $boxModel / 2;
+                 right: $boxModel / 2;
+                 bottom: $boxModel;
+                 top: $boxModel;
+             }
+             &:first-child { 
+                 @media #{$onlyDesktop} {
+                    margin-left: $boxModel; 
+                    clip-path: polygon( 0% 0%, 100% 0%, calc(100% - #{$skewModel}) 100%, 0% 100% );
+                }
+             }
+             &:nth-child(2) {
+                 flex-basis: calc((100% / 3) + #{$skewModel});
+                 position: relative;
+                 @media #{$onlyDesktop} {
+                     clip-path: polygon( calc(0% + #{$skewModel}) 0%, 100% 0%, calc(100% - #{$skewModel}) 100%, 0% 100% );
+                     margin-left: calc(-#{$skewModel} + 10px);
+                 }
+             }
+             &:last-child { 
+                 @media #{$onlyDesktop} {
+                    margin-right: $boxModel; 
+                    width: calc(100% / 3 + 70px);
+                    clip-path: polygon( calc(0% + #{$skewModel}) 0%, 100% 0%, calc(100% - #{$skewModel}) 100%, 0% 100% );
+                    margin-left: calc(-#{$skewModel} + 10px);
+                 }
+             }
+     
+             .excerpt {
+                 width: 100%;
+                 .info {
+                     min-height: 100px;
+                     display: inline-block;
+                     .name, 
+                     .state {
+                         line-height: 1;
+                         margin: 0;
+                         box-sizing: border-box;
+                         @media #{$onlyDesktop} {
+                             padding-left: $skewModel / 2;
+                         }
+                         @media #{$onlyMobile} {
+                            padding: {
+                                left: $boxModel;
+                                right: $boxModel;
+                            }
+                         }
+                     }
+                     .name {
+                         @extend .ui-title;
+                     }
+                     .state {
+                         @extend .ui-label-text;
+                         display: block;
+                         text-align: right;
+                     }
+                 }
+                 .permalink {
+                     @extend .ui-title-small;
+                     color: $secondaryColor;
+                     text-align: right;
+                     display: block;
+                     box-sizing: border-box;
+                     @media #{$onlyDesktop} {
+                         padding-right: $skewModel;
+                     }
+                     line-height: 1;
+                     transition: $linear1;
+                     
+                 }
+             }
+             &:hover {
+                 .permalink {
+                     color: darken( $secondaryColor, 30 );
+                 }
+             }
+         }
+    }
+    .share-links {
+        position: absolute;
+        bottom: $skewModel / 2;
+        right: $skewModel / 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        .fa {
+            color: $gray;
+            @extend .ui-title-small;
+            line-height: 2;
+            transition: $linear1;
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}

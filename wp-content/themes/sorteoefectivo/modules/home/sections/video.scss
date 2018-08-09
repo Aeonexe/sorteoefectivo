@@ -1,0 +1,50 @@
+.video-thumbnail {
+    color: $white;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    background: {
+        size: cover;
+        position: center;
+    }
+    display: flex !important;
+    @include flexModel();
+    .icon-play {
+        @include flexModel();
+        display: inline-flex;
+        margin: {
+            left: $boxModel;
+            right: $boxModel;
+        }
+        width: $boxModel * 3;
+        height: $boxModel * 3;
+        border: {
+            style: solid;
+            width: 2px;
+            radius: $boxModel * 2;
+        }
+        .fa {
+            font-size: 22px;
+        }
+        @media #{$onlyMobile} {
+            margin: {
+                left: auto;
+                right: auto;
+                top: $boxModel;
+            }
+            display: flex;
+        }
+    }
+    .gradient {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( rgba($black, 1) 2%, transparent);
+    }
+    .copy {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+}

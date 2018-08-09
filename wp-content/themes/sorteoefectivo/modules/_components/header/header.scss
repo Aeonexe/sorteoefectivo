@@ -2,12 +2,16 @@
 #main-header {
 	box-sizing: border-box;
 	padding: {
-		top: $boxModel * 2;
-		bottom: $boxModel * 2;
+		top: $boxModel;
+		bottom: $boxModel;
 		left: $boxModel;
 		right: $boxModel;
 	}
 	.logo {
 		display: inline-block;
+	}
+	#logo-bancoppel img {
+		width: 100%;
+		max-width: 400px;
 	}
 }

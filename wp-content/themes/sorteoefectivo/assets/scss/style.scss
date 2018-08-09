@@ -39,6 +39,9 @@ License: © Copyright Alumin.Agency All rights reserved
 
 // Modules
 @import '../../modules/home/home.scss';
+@import '../../modules/home/sections/header-copy.scss';
+@import '../../modules/home/sections/history-excerpt.scss';
+@import '../../modules/home/sections/video.scss';
 
 /**
  * Estilos
@@ -48,12 +51,14 @@ body {
 	font-family: 'Quicksand', 'arial', sans-serif;
 	font-size: 13px;
 	color: #000;
+	background-color: #171616;
 }
 
 #wrapper {
 	width: 100%;
 	max-width: 1400px;
 	margin: auto;
+	background-color: white;
 }
 
 

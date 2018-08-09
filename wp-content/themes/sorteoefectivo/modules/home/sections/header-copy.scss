@@ -1,0 +1,38 @@
+#section-header-copy {
+    background-color: $lightGray;
+    box-sizing: border-box;
+    padding: $boxModel;
+    .content-column {
+        @include flexModel();
+        text-align: center;
+        box-sizing: border-box;
+        padding: $boxModel;
+    }
+    footer {
+        max-width: 600px;
+        margin: auto;
+    }
+    [class*="title-a"] {
+        line-height: 1;
+        display: block;
+    }
+    .title-a-1 {
+        font-size: 100%;
+    }
+    .title-a-2 {
+        font-size: 145%;
+    }
+    .title-a-3 {
+        font-size: 130%;
+        margin-top: -20px;
+    }
+    [class*="title-b"] {
+        display: block;
+    }
+    .title-b-1 {
+
+    }
+    .title-b-2 {
+        font-size: 78%;
+    }
+}
