@@ -15,6 +15,7 @@
             align-items: flex-start;
             justify-content: flex-start;
             padding: $boxModel * 2;
+            @extend .ui-paragraph-big;
         }
         .number {
             font-size: 80px;

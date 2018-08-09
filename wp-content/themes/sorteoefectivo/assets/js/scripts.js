@@ -1,6 +1,10 @@
 //@prepros-prepend ../../vendor/fancybox/fancybox.js
 //@prepros-prepend ../../vendor/slick/slick.js
+//@prepros-prepend ../../vendor/codrops/modernizr.min.js
+//@prepros-prepend ../../vendor/codrops/photostack.js
+//@prepros-prepend ../../vendor/codrops/classie.js
 //@prepros-prepend ../../wpkit/js/site.js
+
 
 $('.slider').slick();
 

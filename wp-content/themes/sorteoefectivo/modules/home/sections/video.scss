@@ -1,10 +1,12 @@
+$videoHeight: 800px;
+
 #section-video {
     padding-top: 30px;
 }
 
 .video-thumbnail {
     color: $white;
-    height: 600px;
+    height: $videoHeight;
     width: 100%;
     position: relative;
     background: {
@@ -60,6 +62,8 @@
         @media #{$onlyDesktop} {
             left: calc((100% / 14) * 7 + -50px );
         }
+        top: -$boxModel;
+        width: 60px;
     }
     .chevron-left {
         @extend .chevron;

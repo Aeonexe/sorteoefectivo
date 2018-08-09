@@ -150,6 +150,74 @@
     </div>
 </section>
 
+<section id="photostack-2" class="photostack photostack-start">
+				<div>
+					<figure>
+						<a href="http://goo.gl/49lN3k" class="photostack-img"><img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/1.jpg" alt="img04"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Heaven of time</h2>
+							<div class="photostack-back">
+								<p>What might be right for you may not be right for some. And we know Flipper lives in a world full of wonder flying there-under under the sea.</p>
+							</div>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/NJ1Dhf" class="photostack-img"><img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/2.jpg" alt="img05"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Speed Racer</h2>
+						</figcaption>
+					</figure>
+					<figure data-shuffle-iteration="2">
+						<a href="http://goo.gl/Qw3ND4" class="photostack-img"><img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/3.jpg" alt="img01"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Serenity Beach</h2>
+							<div class="photostack-back">
+								<p>I have never been to a place so serene in my entire life before. Swimming in clear waters opened my mind to nature and reminded me of my and <span>eveybody</span> everybody else's mortality.</p>
+							</div>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/4.jpg" alt="img02"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Happy Days</h2>
+							<div class="photostack-back">
+								<p>These Happy Days are yours and mine Happy Days. It's a beautiful day in this neighborhood a beautiful day for a neighbor. Would you be mine?</p>
+							</div>
+						</figcaption>
+					</figure>
+					<figure data-shuffle-iteration="3">
+						<a href="http://goo.gl/Jmvr4u" class="photostack-img"><img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/5.jpg" alt="img03"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Beautywood</h2>
+						</figcaption>
+					</figure>
+					<figure data-shuffle-iteration="2">
+						<a href="http://goo.gl/Ms7VDl" class="photostack-img"><img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/6.jpg" alt="img06"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Forever this</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/7.jpg" alt="img07"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Lovely Green</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/8.jpg" alt="img08"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Wonderful</h2>
+						</figcaption>
+					</figure>
+					<figure data-dummy>
+						<a href="#" class="photostack-img"><img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/9.jpg" alt="img09"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Love Addict</h2>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+
 <section id="section-related-histories" class="wk-section">
 
     <div class="wk-cols">
