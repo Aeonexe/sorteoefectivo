@@ -14,7 +14,6 @@ License: © Copyright Alumin.Agency All rights reserved
  * 
  */
 /* Slider */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Give+You+Glory);
 .slick-slider {
   position: relative;
   display: block;
@@ -1204,7 +1203,7 @@ li.fancybox-thumbs-loading {
 
 /* Button on photostack container */
 .js .photostack::after {
-  content: 'View Gallery';
+  content: 'Ver galería de fotos';
   font-weight: 400;
   position: absolute;
   border: 3px solid #fff;
@@ -1323,49 +1322,37 @@ figure.photostack-current::after {
   transform: scale(0.61);
 }
 
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: 'codropsicons';
-  src: url("../fonts/codropsicons/codropsicons.eot");
-  src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../fonts/codropsicons/codropsicons.woff") format("woff"), url("../fonts/codropsicons/codropsicons.ttf") format("truetype"), url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
-}
-
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body {
-  background: #fff;
-  color: #a7a0a2;
-  font-weight: 400;
-  font-size: 1em;
-  font-family: 'Lato', Arial, sans-serif;
+.photostack {
+  /* To Navigation Style */
 }
 
-.clearfix:before,
-.clearfix:after {
+.photostack .clearfix:before,
+.photostack .clearfix:after {
   content: '';
   display: table;
 }
 
-.clearfix:after {
+.photostack .clearfix:after {
   clear: both;
 }
 
-a {
+.photostack a {
   color: #8e888a;
   text-decoration: none;
   outline: none;
 }
 
-a:hover, a:focus {
+.photostack a:hover, .photostack a:focus {
   color: #a7a0a2;
 }
 
-.codrops-header {
+.photostack .codrops-header {
   margin: 0 auto;
   padding: 9em 2em;
   text-align: center;
@@ -1375,7 +1362,7 @@ a:hover, a:focus {
   overflow: hidden;
 }
 
-.codrops-header h1 {
+.photostack .codrops-header h1 {
   margin: 0;
   font-weight: 300;
   font-size: 3.5em;
@@ -1383,15 +1370,14 @@ a:hover, a:focus {
   position: relative;
 }
 
-.codrops-header h1 span {
+.photostack .codrops-header h1 span {
   display: block;
   padding: 0 0 0.6em 0.1em;
   font-size: 60%;
   opacity: 0.7;
 }
 
-/* To Navigation Style */
-.codrops-top {
+.photostack .codrops-top {
   background: #444;
   width: 100%;
   text-transform: uppercase;
@@ -1400,7 +1386,7 @@ a:hover, a:focus {
   line-height: 2.2;
 }
 
-.codrops-top a {
+.photostack .codrops-top a {
   display: inline-block;
   padding: 0 1em;
   text-decoration: none;
@@ -1408,86 +1394,85 @@ a:hover, a:focus {
   color: #919191;
 }
 
-.codrops-top a:hover {
+.photostack .codrops-top a:hover {
   color: #fff;
 }
 
-.codrops-top span.right {
+.photostack .codrops-top span.right {
   float: right;
 }
 
-.codrops-top span.right a {
+.photostack .codrops-top span.right a {
   display: block;
   float: left;
 }
 
-.codrops-icon:before {
+.photostack .codrops-icon:before {
   margin: 0 4px;
   text-transform: none;
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
-  font-family: 'codropsicons';
   line-height: 1;
   speak: none;
   -webkit-font-smoothing: antialiased;
 }
 
-.codrops-icon-drop:before {
+.photostack .codrops-icon-drop:before {
   content: "\e001";
 }
 
-.codrops-icon-prev:before {
+.photostack .codrops-icon-prev:before {
   content: "\e004";
 }
 
-.description {
+.photostack .description {
   padding: 6em 8em;
   overflow: hidden;
 }
 
-.description p {
+.photostack .description p {
   font-size: 200%;
   text-align: center;
   max-width: 800px;
 }
 
-.description p,
-.codrops-header p {
+.photostack .description p,
+.photostack .codrops-header p {
   margin: 0 auto 1em;
   font-weight: 300;
   line-height: 1.4;
 }
 
-.codrops-header p {
+.photostack .codrops-header p {
   opacity: 0.5;
   text-align: left;
   font-size: 200%;
 }
 
-.columns p {
+.photostack .columns p {
   -webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;
   column-break-inside: avoid;
 }
 
-svg.polaroid {
+.photostack svg.polaroid {
   margin: 0 auto;
   display: block;
   max-width: 100%;
 }
 
-.description svg.polaroid {
+.photostack .description svg.polaroid {
   padding: 5px 0 30px;
 }
 
-svg.polaroid rect {
+.photostack svg.polaroid rect {
   stroke: #beb4b7;
   fill: #fff;
   stroke-width: 6;
 }
 
-.codrops-header svg.polaroid {
+.photostack .codrops-header svg.polaroid {
   position: absolute;
   top: 50%;
   z-index: 0;
@@ -1497,12 +1482,12 @@ svg.polaroid rect {
   transform: translateX(-50%) translateY(-50%);
 }
 
-.codrops-header svg.polaroid rect {
+.photostack .codrops-header svg.polaroid rect {
   fill: #444;
   stroke-width: 2;
 }
 
-.related {
+.photostack .related {
   text-align: center;
   font-size: 1.35em;
   padding: 6em 2em;
@@ -1510,7 +1495,7 @@ svg.polaroid rect {
   background-color: #444;
 }
 
-.related > a {
+.photostack .related > a {
   border: 3px solid #3c3c3c;
   display: inline-block;
   text-align: center;
@@ -1521,24 +1506,24 @@ svg.polaroid rect {
   transition: color 0.3s, border-color 0.3s;
 }
 
-.related a:hover {
+.photostack .related a:hover {
   color: #beb4b7;
   border-color: #beb4b7;
 }
 
-.related a img {
+.photostack .related a img {
   max-width: 100%;
   opacity: 0.8;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
-.related a:hover img,
-.related a:active img {
+.photostack .related a:hover img,
+.photostack .related a:active img {
   opacity: 1;
 }
 
-.related a h3 {
+.photostack .related a h3 {
   margin: 0;
   padding: 0.5em 0 0.3em;
   max-width: 300px;
@@ -1546,7 +1531,7 @@ svg.polaroid rect {
 }
 
 @media screen and (min-width: 60em) {
-  .columns {
+  .photostack .columns {
     -moz-column-count: 2;
     -moz-column-gap: 1em;
     -webkit-column-count: 2;
@@ -1554,7 +1539,7 @@ svg.polaroid rect {
     column-count: 2;
     column-gap: 1em;
   }
-  .codrops-header .columns {
+  .photostack .codrops-header .columns {
     padding: 3em 0 0;
     -moz-column-gap: 2em;
     -webkit-column-gap: 2em;
@@ -1563,23 +1548,23 @@ svg.polaroid rect {
 }
 
 @media screen and (max-width: 45em) {
-  .codrops-header,
-  .description {
+  .photostack .codrops-header,
+  .photostack .description {
     font-size: 80%;
   }
-  .description {
+  .photostack .description {
     padding: 4em 1.5em;
   }
-  .codrops-header svg.polaroid {
+  .photostack .codrops-header svg.polaroid {
     height: 200px;
   }
 }
 
 @media screen and (max-width: 25em) {
-  .codrops-icon span {
+  .photostack .codrops-icon span {
     display: none;
   }
-  .codrops-icon:before {
+  .photostack .codrops-icon:before {
     font-size: 160%;
     line-height: 2;
   }
