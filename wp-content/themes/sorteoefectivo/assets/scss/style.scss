@@ -44,11 +44,11 @@ License: © Copyright Alumin.Agency All rights reserved
 @import '../../modules/home/home.scss';
 @import '../../modules/home/sections/header-copy.scss';
 @import '../../modules/home/sections/history-excerpt.scss';
-@import '../../modules/home/sections/video.scss';
-@import '../../modules/home/sections/content.scss';
-@import '../../modules/home/sections/blockquote.scss';
 @import '../../modules/home/sections/info.scss';
-@import '../../modules/home/sections/related-histories.scss';
+@import '../../modules/historia/sections/video.scss';
+@import '../../modules/historia/sections/content.scss';
+@import '../../modules/historia/sections/blockquote.scss';
+@import '../../modules/historia/sections/related-histories.scss';
 
 
 
@@ -60,14 +60,12 @@ body {
 	font-family: 'Quicksand', 'arial', sans-serif;
 	font-size: 13px;
 	color: #000;
-	background-color: #171616;
 }
 
 #wrapper {
 	width: 100%;
-	max-width: 1400px;
+	//max-width: 1400px;
 	margin: auto;
-	background-color: white;
 }
 
 

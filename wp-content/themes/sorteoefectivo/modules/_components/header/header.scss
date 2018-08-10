@@ -7,6 +7,20 @@
 		left: $boxModel;
 		right: $boxModel;
 	}
+	[class*="content-column"] {
+			display: flex;
+			align-items: center;
+	}
+	.content-column-right {
+		justify-content: flex-end;
+		@media #{$onlyMobile} {
+			justify-content: center;
+			padding: {
+				top: $boxModel;
+				bottom: $boxModel;
+			}
+		}
+	}
 	.logo {
 		display: inline-block;
 	}

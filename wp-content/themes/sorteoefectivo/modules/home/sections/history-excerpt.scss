@@ -18,7 +18,10 @@ $historyHight: 600px;
              color: $white;
              min-height: $historyHight;
              @media #{$onlyMobile} {
-                min-height: $historyHight / 2;
+                min-height: $historyHight / 2.5;
+             }
+             @media #{$onlyiPhone5} {
+                min-height: $historyHight / 3.5;
              }
              @media #{$onlyDesktop} {
                  width: calc(100% / 3 + 60px);
@@ -41,13 +44,27 @@ $historyHight: 600px;
                     margin-left: $boxModel; 
                     clip-path: polygon( 0% 0%, 100% 0%, calc(100% - #{$skewModel}) 100%, 0% 100% );
                 }
+                @media #{$onlyMobile} {
+                    clip-path: polygon(calc(0% + #{$skewModel}) 0%,100% 0%,100% 100%,0% 100%);
+                }
+                .excerpt {
+                    @media #{$onlyMobile} {
+                        text-align: right;
+                    }
+                }
              }
+
              &:nth-child(2) {
                  flex-basis: calc((100% / 3) + #{$skewModel});
                  position: relative;
                  @media #{$onlyDesktop} {
                      clip-path: polygon( calc(0% + #{$skewModel}) 0%, 100% 0%, calc(100% - #{$skewModel}) 100%, 0% 100% );
                      margin-left: calc(-#{$skewModel} + 10px);
+                 }
+                 @media #{$onlyMobile} {
+                    .excerpt {
+                        text-align: center;
+                    }
                  }
              }
              &:last-child { 
@@ -56,6 +73,14 @@ $historyHight: 600px;
                     width: calc(100% / 3 + 70px);
                     clip-path: polygon( calc(0% + #{$skewModel}) 0%, 100% 0%, calc(100% - #{$skewModel}) 100%, 0% 100% );
                     margin-left: calc(-#{$skewModel} + 10px);
+                 }
+                 @media #{$onlyMobile} {
+                    clip-path: polygon(0% 0%,100% 0%,calc(100% - #{$skewModel}) 100%,0% 100%);
+                 }
+                 .permalink {
+                     @media #{$onlyMobile} {
+                        padding-right: $skewModel;
+                     }
                  }
              }
      
@@ -113,6 +138,10 @@ $historyHight: 600px;
         position: absolute;
         bottom: $skewModel / 2;
         right: $skewModel / 2;
+        @media #{$onlyMobile} {
+            bottom: $skewModel / 3;
+            right: $skewModel / 3;
+        }
         display: flex;
         flex-direction: column;
         justify-content: flex-end;

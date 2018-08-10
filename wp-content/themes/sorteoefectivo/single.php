@@ -15,7 +15,7 @@ get_header(); ?>
 
 <p>
 
-	<?php get_template_part('modules/home/home'); ?>
+	<?php get_template_part('modules/historia/historia'); ?>
 
 </p>
 

@@ -45,9 +45,9 @@
 
     .columns {
         .content-column {
-            max-width: 320px;
             margin: auto;
             @media #{$onlyDesktop} {
+                max-width: 320px;
                 padding: {
                     top: $boxModel * 2;
                     bottom: $boxModel * 2;
