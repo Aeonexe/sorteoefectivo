@@ -92,17 +92,14 @@
 <?php $gallery = get_field( 'galeria' ); ?>
 <?php if( $gallery ) : ?> 
 
-    <section id="photostack-1" class="photostack photostack-start">
-        <div>
+    <section id="photostack-1s" class="photostacks photostack-starts">
+        <div class="slider">
             
             
             <?php foreach( $gallery as $image ) : ?>
             
-            <figure>
-                <a href="#" data-fancybox data-src="<?php echo $image['sizes']['large']; ?>" class="photostack-img"><img class="wk-img-responsive" src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['title']; ?>"/></a>
-                <figcaption>
-                    <h2 class="photostack-title"><?php echo $image['title']; ?></h2>
-                </figcaption>
+            <figure class="slide">
+                <a href="#" data-fancybox data-src="<?php echo $image['sizes']['large']; ?>" class="slider-img"><img class="wk-img-responsive" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['title']; ?>"/></a>
             </figure>
             
             <?php endforeach; ?>
