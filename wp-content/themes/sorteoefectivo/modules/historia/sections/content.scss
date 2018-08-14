@@ -43,7 +43,10 @@
     .content-column-left {
         text-align: right;
     }
-
+    .colum,
+    .columns {
+        margin-top: $boxModel * 5;
+    }
     .columns {
         .content-column {
             margin: auto;
