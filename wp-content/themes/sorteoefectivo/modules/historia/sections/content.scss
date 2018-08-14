@@ -14,14 +14,15 @@
         }
     }
     [class*="content-column"] {
+        @extend .ui-title-small;
         display: flex;
         flex-direction: column;
         justify-content: center;
         box-sizing: border-box;
         @media #{$onlyDesktop} {
             padding: {
-                left: $boxModel * 2;
-                right: $boxModel * 2;
+                left: $boxModel;
+                right: $boxModel;
             }
         }
         @media #{$onlyMobile} {
@@ -47,25 +48,24 @@
         .content-column {
             margin: auto;
             @media #{$onlyDesktop} {
-                max-width: 320px;
+                //max-width: 320px;
                 padding: {
-                    top: $boxModel * 2;
-                    bottom: $boxModel * 2;
+                    top: $boxModel;
+                    bottom: $boxModel;
                 }
             }
             &:nth-child(even) {
                 @media #{$onlyDesktop} {
-                    margin-top: 100px;
+                    //margin-top: 100px;
                 }
             }
             &:nth-child(odd) {
-                margin-top: 0;
-                padding-top: 0;
+                // margin-top: 0;
+                // padding-top: 0;
             }
         }
     }
     .column {
-        @extend .ui-title-small;
         margin: auto;
         max-width: 600px;
         line-height: 1.5;

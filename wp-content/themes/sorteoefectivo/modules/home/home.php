@@ -7,7 +7,6 @@
                     <h4 class="ui-title-extra-big">
                         <span class="title-a-1">¡Quiero ganar</span> 
                         <span class="title-a-2 ui-title-extra-big"><strong>$100,000</strong></span>
-                        <span class="title-a-3">cada mes!</span>
                     </h4>
                     <h2 class="ui-title ui-text-main">
                         <strong class="title-b-1">Con el Sorteo Efectivo</strong> 
@@ -23,7 +22,8 @@
         <footer class="content-column wk-text-center">
             <div class="container">
                 <h3 class="ui-title-small"><strong>Conoce las historias de Gaby, Samuel y Amanda, ganadores del Sorteo Efectivo</strong></h3>
-                <p class="ui-title-big"><strong>!Participa!</strong></p>
+                <p class="ui-title-big"><a target="_blank" href="https://www.bancoppel.com/sorteo_bcopp/index.html" class="ui-button-ghost-main"><strong>!Participa!</strong></a></p>
+                
             </div>
         </footer>
 

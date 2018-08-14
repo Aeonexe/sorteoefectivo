@@ -1,10 +1,6 @@
 //@prepros-prepend ../../vendor/fancybox/fancybox.js
 //@prepros-prepend ../../vendor/slick/slick.js
-/*
-// @prepros-prepend ../../vendor/codrops/modernizr.min.js
-// @prepros-prepend ../../vendor/codrops/photostack.js
-// @prepros-prepend ../../vendor/codrops/classie.js
-*/
+
 //@prepros-prepend ../../wpkit/js/site.js
 
 
@@ -15,6 +11,7 @@ $('.slider').slick({
     prevArrow: '<span class="slick-arrow slick-prev slick-class"><i class="fa fa-chevron-left"></i></span>',
     nextArrow: '<span class="slick-arrow slick-next slick-class"><i class="fa fa-chevron-right"></i></span>',
     fade: true,
+    adaptiveHeight: true,
 });
 
 
