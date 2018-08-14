@@ -6,7 +6,7 @@
                 <div class="container">
                     <h4 class="ui-title-extra-big">
                         <span class="title-a-1">¡Quiero ganar</span> 
-                        <span class="title-a-2 ui-title-extra-big"><strong>$100,000</strong></span>
+                        <span class="title-a-2 ui-title-extra-big"><strong>$100,000!</strong></span>
                     </h4>
                     <h2 class="ui-title ui-text-main">
                         <strong class="title-b-1">Con el Sorteo Efectivo</strong> 
@@ -22,7 +22,7 @@
         <footer class="content-column wk-text-center">
             <div class="container">
                 <h3 class="ui-title-small"><strong>Conoce las historias de Gaby, Samuel y Amanda, ganadores del Sorteo Efectivo</strong></h3>
-                <p class="ui-title-big"><a target="_blank" href="https://www.bancoppel.com/sorteo_bcopp/index.html" class="ui-button-ghost-main"><strong>!Participa!</strong></a></p>
+                <p class="ui-title-big"><a target="_blank" href="https://www.bancoppel.com/sorteo_bcopp/index.html" class="ui-button-ghost-main"><strong>¡Participa!</strong></a></p>
                 
             </div>
         </footer>
@@ -59,8 +59,12 @@
     </div>
 
     <div class="share-links">
-        <a href="#" class="facebook"><span class="fa fa-facebook"></span></a>
-        <a href="#" class="twitter"><span class="fa fa-twitter"></span></a>
+        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?= get_permalink(); ?>" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= get_permalink(); ?>','pagename','resizable,height=400,width=480'); return false;">
+            <span class="fa fa-facebook"></span>
+        </a>
+        <a class="twitter" href="https://twitter.com/home?status=<?php bloginfo( 'url' ); ?>" onclick="window.open('https://twitter.com/home?status=Conoce las historias de tres ganadores del Sorteo Efectivo BanCoppel y ¡participa por $100,000! www.sorteoefectivo.com','pagename','resizable,height=400,width=480'); return false;">
+            <span class="fa fa-twitter"></span>
+        </a>
     </div>
 
 </section>

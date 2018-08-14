@@ -19,6 +19,15 @@
         </div>
     </a>
 
+    <div class="share-links">
+        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?= get_permalink(); ?>" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=<?= get_permalink(); ?>','pagename','resizable,height=400,width=480'); return false;">
+            <span class="fa fa-facebook"></span>
+        </a>
+        <a target="_blank" class="twitter" href="https://twitter.com/home?status=<?php bloginfo( 'url' ); ?>" onclick="window.open('https://twitter.com/home?status=<?php bloginfo( 'url' ); ?>,'pagename','resizable,height=400,width=480'); return false;">
+            <span class="fa fa-twitter"></span>
+        </a>
+    </div>
+
 </section>
 
 <section id="section-content" class="wk-section">

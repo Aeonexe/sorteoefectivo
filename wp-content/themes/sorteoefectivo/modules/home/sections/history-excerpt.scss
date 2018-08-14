@@ -134,26 +134,26 @@ $historyHight: 600px;
              }
          }
     }
-    .share-links {
-        position: absolute;
-        bottom: $skewModel / 2;
-        right: $skewModel / 2;
-        @media #{$onlyMobile} {
-            bottom: $skewModel / 3;
-            right: $skewModel / 3;
-        }
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        .fa {
-            color: $gray;
-            @extend .ui-title-small;
-            line-height: 2;
-            transition: $linear1;
-            &:hover {
-                color: $black;
-            }
+}
+.share-links {
+    position: absolute;
+    bottom: $skewModel / 2;
+    right: $skewModel / 2;
+    @media #{$onlyMobile} {
+        bottom: $skewModel / 3;
+        right: $skewModel / 3;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    .fa {
+        color: $gray;
+        @extend .ui-title-small;
+        line-height: 2;
+        transition: $linear1;
+        &:hover {
+            color: $black;
         }
     }
 }

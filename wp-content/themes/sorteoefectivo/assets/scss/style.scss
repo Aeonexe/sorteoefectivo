@@ -68,5 +68,13 @@ body {
 	//max-width: 1400px;
 	margin: auto;
 }
+.content-column a {
+    color: $mainColor;
+	text-decoration: underline;
+	transition: $linear1;
+	&:hover {
+		color: lighten( $mainColor, 20 );
+	}
+}
 
 

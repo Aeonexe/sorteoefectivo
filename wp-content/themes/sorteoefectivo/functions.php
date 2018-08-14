@@ -26,7 +26,16 @@ WPKit */
 			'capability'	=> 'edit_posts',
 			'redirect'		=> false,
 			'icon_url'		=> 'dashicons-marker',
-		 'position'		=> '4',
+		 	'position'		=> '4',
+		));
+		acf_add_options_page(array(
+			'page_title' 	=> 'Share',
+			'menu_title'	=> 'Share',
+			'menu_slug' 	=> 'share',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false,
+			'icon_url'		=> 'dashicons-share',
+		 	'position'		=> '3',
 		));
 
 		// acf_add_options_sub_page(array(
